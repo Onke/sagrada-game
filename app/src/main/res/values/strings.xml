@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SagradaClient</string>
+    <string name="btnPlay">Play Online</string>
+    <string name="btnHelp">How to play</string>
+    <string name="txtIntro">Compete with other player online to see who can build the most beautiful window of the SAGRADA FAMILIE</string>
+    <string name="txtName">Name</string>
+    <string name="txtIPAddress">IP Address</string>
+    <string name="btnConnect">Connect</string>
+    <string name="txtProgress">Waiting for players</string>
+    <string name="btnPrivateObjective">Private Objective</string>
+    <string name="btnContinue">Continue</string>
+    <string name="btnPublicObjective">Public Objective</string>
+    <string name="btnWindows">Windows</string>
+    <string name="btnSkip">Skip</string>
+    <string name="txtWaiting">Waiting for more players...</string>
+</resources>
