@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObjectivesActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sagrada_background" />
+
+    <Button
+        android:id="@+id/btnPrivateObjective"
+        android:layout_width="302dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/label"
+        android:clickable="false"
+        android:fontFamily="serif"
+        android:text="@string/btnPrivateObjective"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnWindows"
+        android:layout_width="302dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/label"
+        android:clickable="false"
+        android:fontFamily="serif"
+        android:text="@string/btnWindows"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPublicObjective"
+        android:layout_width="302dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/label"
+        android:clickable="false"
+        android:fontFamily="serif"
+        android:text="@string/btnPublicObjective"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgPrivateObjective"
+        android:layout_width="248dp"
+        android:layout_height="267dp"
+        android:src="@drawable/red"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="226dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button"
+        android:fontFamily="serif"
+        android:onClick="onContinueClicked"
+        android:text="@string/btnContinue"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPublicObjective1"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/public_objective_card2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/imgPublicObjective3"
+        app:layout_constraintEnd_toStartOf="@+id/imgPublicObjective2"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/imgPublicObjective3"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/public_objective_card3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/imgPublicObjective2"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/public_objective_card7"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/imgPublicObjective3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/imgWindow1"
+        android:layout_width="165dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/window1"
+        app:layout_constraintBottom_toBottomOf="@+id/imgWindow2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/imgWindow2"
+        android:layout_width="165dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/window16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/imgWindow1"
+        app:layout_constraintTop_toBottomOf="@+id/btnWindows"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/imgWindow4"
+        android:layout_width="165dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/window22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgWindow3"
+        app:layout_constraintTop_toBottomOf="@+id/imgWindow2"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/imgWindow3"
+        android:layout_width="165dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/window17"
+        app:layout_constraintBottom_toBottomOf="@+id/imgWindow4"
+        app:layout_constraintEnd_toStartOf="@+id/imgWindow4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="106dp"
+        android:layout_height="108dp"
+        android:background="#4CAF50"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

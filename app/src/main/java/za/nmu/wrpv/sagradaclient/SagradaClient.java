@@ -26,10 +26,10 @@ import nmu.sagrada.messages.client.SkipTurn;
 import nmu.sagrada.messages.client.WindowListRequest;
 import nmu.sagrada.messages.client.WindowSelected;
 
-public class SagradaClient{
+public class SagradaClient implements Serializable{
 
     private String serverAddress;
-    private ObjectInputStream in = null;
+    private ObjectInputStream in =  null;
     private ObjectOutputStream out = null;
 
     private BlockingQueue<Message> outGoingMessages;
@@ -38,7 +38,14 @@ public class SagradaClient{
     private Thread readThread;
     private Thread writeThread;
 
+    private String playerName;
+
     public SagradaClient(MessageReceiver messageReceiver){
+        this.messageReceiver = messageReceiver;
+        outGoingMessages = new LinkedBlockingDeque<>();
+    }
+
+    public  void setMessageReceiver(MessageReceiver messageReceiver){
         this.messageReceiver = messageReceiver;
         outGoingMessages = new LinkedBlockingDeque<>();
     }
@@ -168,5 +175,9 @@ public class SagradaClient{
                 writeThread = null;
             }
         }
+    }
+
+    public String getPlayerName() {
+        return playerName;
     }
 }
