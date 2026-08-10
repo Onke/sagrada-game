@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="za.nmu.wrpv.sagradaclient">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -11,7 +10,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <!-- Scripted lesson, reached from the end of the How to Play deck. -->
+        <activity
+            android:name=".TutorialActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- Free-play sandbox with a randomised window and pool, reached from the home screen. -->
+        <activity
+            android:name=".PracticeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HowToPlayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!--
+          The match lives in the activity alongside its socket, so a rotation would drop the
+          connection. The board is a portrait layout regardless; lock it rather than lose games.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

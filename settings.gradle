@@ -1,2 +1,4 @@
-include ':app'
+include ':app', ':game-core', ':protocol'
 rootProject.name='SagradaClient'
+project(':game-core').projectDir = file('../sagrada-server/game-core')
+project(':protocol').projectDir = file('../sagrada-server/protocol')

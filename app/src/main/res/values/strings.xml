@@ -1,16 +1,201 @@
 <resources>
-    <string name="app_name">SagradaClient</string>
-    <string name="btnPlay">Play Online</string>
+    <string name="app_name">Sagrada</string>
+
+    <!-- Home -->
+    <string name="tagline">Build the most beautiful stained-glass window in the Sagrada Família.</string>
+    <string name="btnPlay">Play</string>
     <string name="btnHelp">How to play</string>
-    <string name="txtIntro">Compete with other player online to see who can build the most beautiful window of the SAGRADA FAMILIE</string>
-    <string name="txtName">Name</string>
-    <string name="txtIPAddress">IP Address</string>
+    <string name="btnPractice">Practice placement</string>
+    <string name="home_hint">New here? Start with <b>How to play</b> — it takes two minutes.</string>
+
+    <!-- Connect -->
+    <string name="connect_title">Join a match</string>
+    <string name="section_mode">Game mode</string>
+    <string name="mode_bots">Solo vs bots</string>
+    <string name="mode_bots_detail">Play immediately against 1–3 computer opponents.</string>
+    <string name="mode_lan">LAN multiplayer</string>
+    <string name="mode_lan_detail">Waits for four people on the same network.</string>
+    <string name="section_opponents">Opponents</string>
+    <string name="bots_count">%1$d</string>
+    <string name="section_difficulty">Difficulty</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    <string name="difficulty_easy_detail">Bots place at random and move quickly. Good for learning the rules.</string>
+    <string name="difficulty_medium_detail">Bots pick from their strongest few options, so they make mistakes you can exploit.</string>
+    <string name="difficulty_hard_detail">Bots take the highest-scoring placement and break ties by keeping their options open.</string>
+    <string name="section_connection">Connection</string>
+    <string name="txtName">Your name</string>
+    <string name="txtIPAddress">Server IP address</string>
+    <string name="ip_helper">The server prints this address when it starts up.</string>
     <string name="btnConnect">Connect</string>
-    <string name="txtProgress">Waiting for players</string>
-    <string name="btnPrivateObjective">Private Objective</string>
-    <string name="btnContinue">Continue</string>
-    <string name="btnPublicObjective">Public Objective</string>
-    <string name="btnWindows">Windows</string>
-    <string name="btnSkip">Skip</string>
-    <string name="txtWaiting">Waiting for more players...</string>
+    <string name="enter_name">Enter a name to play under.</string>
+    <string name="enter_address">Enter the server IP address.</string>
+    <string name="connection_error">Could not connect</string>
+    <string name="server_message">Server message</string>
+    <string name="back">Back</string>
+
+    <!-- Lobby -->
+    <string name="lobby_title">Lobby</string>
+    <string name="connecting">Connecting to %1$s…</string>
+    <string name="waiting_players">Waiting for players — %1$d of %2$d</string>
+    <string name="preparing_bot_match">Setting up your match…</string>
+    <string name="lobby_players">In this match</string>
+    <string name="bot_suffix">Bot</string>
+    <string name="you_suffix">You</string>
+    <string name="leave">Leave</string>
+
+    <!-- Setup: objectives -->
+    <string name="setup_title">Your objectives</string>
+    <string name="setup_subtitle">These decide your score. Read them before you pick a window — tap any card for detail.</string>
+    <string name="private_objective">Private objective — yours alone</string>
+    <string name="public_objectives">Public objectives — everyone scores these</string>
+    <string name="private_objective_detail">Score the sum of every %1$s die in your finished window. Nobody else knows your colour.</string>
+    <string name="private_objective_short">Sum of your %1$s dice</string>
+    <string name="btnContinue">Choose my window</string>
+
+    <!-- Setup: windows -->
+    <string name="windows_title">Choose your window</string>
+    <string name="windows_subtitle">Coloured cells accept only that colour, numbered cells only that value, clear cells anything. More restrictions mean a harder window.</string>
+    <string name="window_stats">%1$d colour · %2$d number · %3$d open</string>
+    <string name="btnConfirmWindow">Play this window</string>
+    <string name="select_window_first">Tap one of the four windows to select it.</string>
+    <string name="waiting_for_setup">Waiting for the other players to choose…</string>
+
+    <!-- Game -->
+    <string name="round_of">Round %1$d of 10</string>
+
+    <!-- Round transition screen -->
+    <string name="round_complete">Round %1$d complete</string>
+    <string name="match_ready">Windows chosen</string>
+    <string name="round_headline">Round %1$d</string>
+    <string name="round_detail">Every die left over has been cleared away and a fresh pool rolled — two dice per player, plus one spare.</string>
+    <string name="round_new_pool">The new draft pool</string>
+    <string name="round_starter_you">You play first this round.</string>
+    <string name="round_starter_other">%1$s plays first this round.</string>
+    <string name="round_start">Start round</string>
+    <string name="auto_next">Advance bot turns automatically</string>
+    <string name="your_turn">Your turn — pick a die, then a glowing cell</string>
+    <string name="your_turn_selected">Now tap one of the glowing cells</string>
+    <string name="your_turn_stuck">No legal placement — tap Pass to end your turn</string>
+    <string name="other_turn">%1$s is playing…</string>
+    <string name="bot_thinking">%1$s is thinking…</string>
+    <string name="bot_placed">%1$s placed a die — tap Next when you\'ve seen it</string>
+    <string name="bot_passed">%1$s had no legal move and passed — tap Next</string>
+    <string name="btnNext">Next</string>
+    <string name="waiting_turn">Waiting…</string>
+    <string name="draft_pool">Draft pool</string>
+    <string name="btnSkip">Pass</string>
+    <string name="score_projection">Score %1$d</string>
+    <string name="viewing_own">Your window</string>
+    <string name="viewing_other">%1$s\'s window</string>
+    <string name="turn_marker">● playing now</string>
+    <string name="select_die_first">Pick a die from the draft pool first.</string>
+    <string name="cell_not_legal">That cell is not legal for this die.</string>
+    <string name="in_game_help">Rules</string>
+    <string name="quit_match">Leave match?</string>
+    <string name="quit_match_detail">You will be disconnected and the match will end.</string>
+    <string name="quit_confirm">Leave</string>
+    <string name="stay">Stay</string>
+    <string name="objective_points">Worth %1$s</string>
+
+    <!-- End game -->
+    <string name="final_standings">Final standings</string>
+    <string name="score_line">%1$d public + %2$d private − %3$d empty</string>
+    <string name="exit_match">Exit to menu</string>
+    <string name="play_again">Play again</string>
+    <string name="waiting_for_host">Only the host can start a rematch.</string>
+    <string name="winner_is">%1$s wins</string>
+    <string name="you_win">You win</string>
+    <string name="outcome_won">Ten rounds done — your window scored highest.</string>
+    <string name="outcome_lost">You finished %1$s with %2$d points.</string>
+    <string name="rank_first">1st</string>
+    <string name="rank_second">2nd</string>
+    <string name="rank_third">3rd</string>
+    <string name="rank_fourth">4th</string>
+    <string name="standing_you">%1$s (you)</string>
+    <string name="standing_bot">%1$s (bot)</string>
+    <!-- Third-person: this row may belong to any player, so it must not say "your". -->
+    <string name="standing_private">Private objective: %1$s</string>
+    <string name="standing_private_unknown">Private objective not revealed</string>
+
+    <!-- Free practice sandbox -->
+    <string name="practice_title">Practice placement</string>
+    <string name="practice_subtitle">A random window and a random pool. No opponents, no scoring pressure — place dice and see what the rules allow.</string>
+    <string name="practice_new">New window</string>
+    <string name="practice_prompt">Tap a die, then a glowing cell.</string>
+    <string name="practice_no_moves">Nothing in the pool fits any more. Try a new window.</string>
+    <string name="practice_full">Window complete — every cell filled.</string>
+    <string name="practice_private">Private objective: sum of your %1$s dice</string>
+    <string name="practice_score">Score %1$d  ·  %2$d public + %3$d private − %4$d empty</string>
+    <string name="practice_placed">Placed %1$s.</string>
+
+    <!-- How to play deck -->
+    <string name="how_to_play_title">How to play</string>
+    <string name="previous">Back</string>
+    <string name="next">Next</string>
+    <string name="close">Close</string>
+    <string name="start_practice">Try it — guided practice</string>
+    <string name="page_count">%1$d / %2$d</string>
+    <string name="help_goal_title">Create the finest window</string>
+    <string name="help_goal_body">Over ten rounds you fill a 5×4 window with dice. The player whose finished window scores highest wins. Play solo against one to three bots, or with three other people on the same network.</string>
+    <string name="help_setup_title">Objectives decide your score</string>
+    <string name="help_setup_body">You get one private objective — a secret colour. At the end you add up the values of every die of that colour in your window.\n\nThree public objectives are shared by everyone and reward patterns, like a row where all five colours differ.</string>
+    <string name="help_round_title">Drafting and turns</string>
+    <string name="help_round_body">Each round rolls two dice per player plus one spare into the draft pool. Everyone takes one turn in order, then a second turn back down the order, so the last player takes two in a row. On each turn place one die or pass. The starting player rotates every round.</string>
+    <string name="help_first_die_title">Your first die</string>
+    <string name="help_first_die_body">The first die you ever place must sit on an outside edge or corner of the window.\n\nAfter that, every die must touch a die already placed — side by side or diagonally.</string>
+    <string name="help_restrictions_title">Placement restrictions</string>
+    <string name="help_restrictions_body">A coloured cell accepts only that colour. A numbered cell accepts only that value. Clear cells accept any die.\n\nTwo dice that touch side by side may not share a colour or a value. Diagonal neighbours may match freely.</string>
+    <string name="help_scoring_title">Scoring</string>
+    <string name="help_scoring_body">Add up every completed public objective, then add the values of dice matching your private colour. Subtract one point for every cell you left empty.\n\nIf two players tie, the higher private-objective score wins.</string>
+    <string name="help_controls_title">Controls</string>
+    <string name="help_controls_body">Tap a die in the draft pool and the legal cells light up gold. Tap one to place it. Tap the arrows to inspect any player\'s window, and the objective cards for a reminder of what they reward.\n\nThe ? button reopens this guide at any time without leaving your match.</string>
+
+    <!-- Guided practice -->
+    <string name="tutorial_title">Guided practice</string>
+    <string name="tutorial_subtitle">Three placements, no opponents. Nothing here affects a real match.</string>
+    <string name="tutorial_restart">Restart</string>
+    <string name="tutorial_finish">Done</string>
+    <string name="tutorial_back">Back</string>
+    <string name="tutorial_dice">Draft pool</string>
+    <string name="tutorial_step_one">Step 1 of 3 — your first die must touch an edge. Select the red 4 and place it on the glowing cell.</string>
+    <string name="tutorial_step_two">Step 2 of 3 — that cell only accepts a 6. Select the blue 6 and place it on the glowing cell.</string>
+    <string name="tutorial_step_three_conflict">Step 3 of 3 — select the blue 5 and try the glowing cell directly below the blue die.</string>
+    <string name="tutorial_step_three_legal">Rejected: two blue dice may not touch side by side. Diagonal is fine — use the glowing cell now.</string>
+    <string name="tutorial_complete">Done. You used an edge, matched a cell restriction, and worked around a colour conflict.</string>
+    <string name="tutorial_pick_named">Select the die named in the current step.</string>
+    <string name="tutorial_use_highlighted">Use the glowing cell for this step.</string>
+
+    <!-- Objective catalogue -->
+    <string name="obj_points_row">6 points per row</string>
+    <string name="obj_points_column_colour">5 points per column</string>
+    <string name="obj_points_column_number">4 points per column</string>
+    <string name="obj_points_row_number">5 points per row</string>
+    <string name="obj_points_pair">2 points per pair</string>
+    <string name="obj_points_set">6 points per set</string>
+    <string name="obj_points_fixed">8 points</string>
+
+    <string name="obj_diff_colours_row">Row Colour Variety</string>
+    <string name="obj_diff_colours_row_body">A full row of five dice, all different colours.</string>
+    <string name="obj_diff_colours_column">Column Colour Variety</string>
+    <string name="obj_diff_colours_column_body">A full column of four dice, all different colours.</string>
+    <string name="obj_diff_numbers_row">Row Shade Variety</string>
+    <string name="obj_diff_numbers_row_body">A full row of five dice, all different values.</string>
+    <string name="obj_diff_numbers_column">Column Shade Variety</string>
+    <string name="obj_diff_numbers_column_body">A full column of four dice, all different values.</string>
+    <string name="obj_one_two">Light Shades</string>
+    <string name="obj_one_two_body">Each pair of a 1 and a 2 anywhere in your window.</string>
+    <string name="obj_three_four">Medium Shades</string>
+    <string name="obj_three_four_body">Each pair of a 3 and a 4 anywhere in your window.</string>
+    <string name="obj_five_six">Deep Shades</string>
+    <string name="obj_five_six_body">Each pair of a 5 and a 6 anywhere in your window.</string>
+    <string name="obj_jagged">Colour Diagonals</string>
+    <string name="obj_jagged_body">Each complete diagonal band of five dice showing all five colours.</string>
+    <string name="obj_pyramid">Shade Pyramid</string>
+    <string name="obj_pyramid_body">A fixed pyramid of values 1–6 in the centre of the window.</string>
+    <string name="obj_light">Blue and Yellow Cross</string>
+    <string name="obj_light_body">A fixed cross of four blue and three yellow dice.</string>
+    <string name="obj_unknown">Objective</string>
+    <string name="obj_unknown_body">Scored at the end of the match.</string>
 </resources>
