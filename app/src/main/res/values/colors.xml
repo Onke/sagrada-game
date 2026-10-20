@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#000000</color>
+    <!-- Legacy names kept so the AppCompat theme keeps resolving. -->
+    <color name="colorPrimary">#16273F</color>
+    <color name="colorPrimaryDark">#0A1524</color>
+    <color name="colorAccent">#E8B33C</color>
+
+    <!-- Stained-glass night palette. -->
+    <color name="night">#0E1B2E</color>
+    <color name="surface">#16273F</color>
+    <color name="surfaceRaised">#1E3350</color>
+    <color name="outline">#2E4A6E</color>
+    <color name="scrim">#C00A1524</color>
+
+    <color name="gold">#E8B33C</color>
+    <color name="goldDark">#B98A22</color>
+    <color name="goldPressed">#F5C95A</color>
+
+    <color name="textPrimary">#F2F6FB</color>
+    <color name="textSecondary">#A9BCD3</color>
+    <color name="textMuted">#7189A5</color>
+
+    <color name="danger">#E0574A</color>
+    <color name="success">#4FB477</color>
+
+    <!-- Die colours. Shared by the board, the draft pool and the practice tutorial. -->
+    <color name="dieBlue">#2368B4</color>
+    <color name="dieGreen">#2B844A</color>
+    <color name="diePurple">#75478F</color>
+    <color name="dieRed">#BE3636</color>
+    <color name="dieYellow">#CA9B17</color>
 </resources>
